@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="pastel">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacharapron Kamollert | My Favorite Stars</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- daisyUI Components -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+</head>
+<body class="min-h-screen bg-base-200 text-base-content">
+
+    <!-- Navbar -->
+    <nav class="navbar bg-neutral text-neutral-content shadow-lg px-4 md:px-10">
+        <div class="navbar-start">
+            <a href="#home" class="btn btn-ghost text-lg md:text-xl font-bold">Pacharapron</a>
+        </div>
+
+        <div class="navbar-end">
+            <!-- เมนูสำหรับหน้าจอขนาดใหญ่ -->
+            <div class="hidden md:flex gap-2">
+                <a href="#home" class="btn btn-ghost">Home</a>
+                <a href="#about" class="btn btn-ghost">About</a>
+                <a href="#gallery" class="btn btn-ghost">Gallery</a>
+            </div>
+
+            <!-- เมนูสำหรับโทรศัพท์ -->
+            <div class="dropdown dropdown-end md:hidden">
+                <label tabindex="0" class="btn btn-ghost text-2xl" aria-label="เปิดเมนู">☰</label>
+                <ul tabindex="0" class="menu dropdown-content mt-3 z-10 p-2 shadow bg-base-100 text-base-content rounded-box w-40">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero min-h-[420px] bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/30 px-5 py-16">
+        <div class="hero-content text-center">
+            <div class="max-w-2xl">
+                <div class="badge badge-secondary badge-lg mb-5">Welcome to my website</div>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">Pacharapron Kamollert</h1>
+                <p class="py-5 text-lg md:text-xl opacity-80">1680705249</p>
+                <a href="#gallery" class="btn btn-primary btn-wide">ดูผลงาน</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-14 px-5">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+            <div class="divider divider-primary max-w-xs mx-auto"></div>
+            <p class="text-lg md:text-xl">ดาราที่ชื่นชอบ</p>
+            <p class="mt-3 opacity-70">เว็บไซต์รวบรวมรูปภาพและข้อมูลของศิลปินและนักแสดงที่ฉันชื่นชอบ</p>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-14 px-5 bg-base-100">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-bold">My Gallery</h2>
+                <p class="mt-3 opacity-70">รวม 8 ศิลปินและนักแสดงที่ชื่นชอบ</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <div class="card bg-base-200 shadow-xl overflow-hidden">
+                    <figure class="h-72"><img src="images/actor1.jpg" alt="จอง แจฮยอน" class="w-full h-full object-cover object-top" loading="lazy"></figure>
+                    <div class="card-body">
+                        <h3 class="card-title text-lg">จอง แจฮยอน (Jeong Jaehyun)</h3>
+                        <p>เกิดเมื่อวันที่ 14 กุมภาพันธ์ ค.ศ. 1997 เป็นสมาชิกบอยแบนด์เกาหลีใต้ชื่อดังอย่างวง NCT</p>
+                        <div class="card-actions justify-end"><a href="#about" class="btn btn-primary btn-sm">อ่านเพิ่มเติม</a></div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 shadow-xl overflow-hidden">
+                    <figure class="h-72"><img src="images/actor2.jpg" alt="วี คิม แทฮยอง" class="w-full h-full object-cover object-top" loading="lazy"></figure>
+                    <div class="card-body">
+                        <h3 class="card-title text-lg">วี (V) หรือ คิม แทฮยอง (Kim Tae Hyung)</h3>
+                        <p>เกิดเมื่อวันที่ 30 ธันวาคม ค.ศ. 1995 เป็นสมาชิกของบอยแบนด์เกาหลีใต้ชื่อดังอย่างวง BTS</p>
+                        <div class="card-actions justify-end"><a href="#about" class="btn btn-primary btn-sm">อ่านเพิ่มเติม</a></div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 shadow-xl overflow-hidden">
+                    <figure class="h-72"><img src="images/actor3.jpg" alt="แอนตัน อีชานยอง" class="w-full h-full object-cover object-top" loading="lazy"></figure>
+                    <div class="card-body">
+                        <h3 class="card-title text-lg">แอนตัน (Anton) หรือ อีชานยอง (Lee Chan-young)</h3>
+                        <p>เกิดเมื่อวันที่ 21 มีนาคม ค.ศ. 2004 เป็นสมาชิกของบอยแบนด์เกาหลีใต้อย่างวง RIIZE</p>
+                        <div class="card-actions justify-end"><a href="#about" class="btn btn-primary btn-sm">อ่านเพิ่มเติม</a></div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 shadow-xl overflow-hidden">
+                    <figure class="h-72"><img src="images/actor4.jpg" alt="บยอนอูซอก" class="w-full h-full object-cover object-top" loading="lazy"></figure>
+                    <div class="card-body">
+                        <h3 class="card-title text-lg">บยอนอูซอก (Byeon Woo Seok)</h3>
+                        <p>เกิดเมื่อวันที่ 31 ตุลาคม ค.ศ. 1991 เป็นนักแสดงและนายแบบชื่อดังของเกาหลีใต้</p>
+                        <div class="card-actions justify-end"><a href="#about" class="btn btn-primary btn-sm">อ่านเพิ่มเติม</a></div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 shadow-xl overflow-hidden">
+                    <figure class="h-72"><img src="images/actor5.jpg" alt="พัค ซองฮุน" class="w-full h-full object-cover object-top" loading="lazy"></figure>
+                    <div class="card-body">
+                        <h3 class="card-title text-lg">พัค ซองฮุน (Park Sung-hoon)</h3>
+                        <p>เกิดเมื่อวันที่ 8 ธันวาคม ค.ศ. 2002 เป็นสมาชิกของบอยแบนด์เกาหลีใต้อย่างวง ENHYPEN</p>
+                        <div class="card-actions justify-end"><a href="#about" class="btn btn-primary btn-sm">อ่านเพิ่มเติม</a></div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 shadow-xl overflow-hidden">
+                    <figure class="h-72"><img src="images/actor6.jpg" alt="ชเวฮยอนอุค" class="w-full h-full object-cover object-top" loading="lazy"></figure>
+                    <div class="card-body">
+                        <h3 class="card-title text-lg">ชเวฮยอนอุค (Choi Hyun-wook)</h3>
+                        <p>เกิดเมื่อวันที่ 30 มกราคม ค.ศ. 2002 เป็นนักแสดงและนายแบบชื่อดังของเกาหลีใต้</p>
+                        <div class="card-actions justify-end"><a href="#about" class="btn btn-primary btn-sm">อ่านเพิ่มเติม</a></div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 shadow-xl overflow-hidden">
+                    <figure class="h-72"><img src="images/actor7.jpg" alt="ฮวัง อินยอบ" class="w-full h-full object-cover object-top" loading="lazy"></figure>
+                    <div class="card-body">
+                        <h3 class="card-title text-lg">ฮวัง อินยอบ (Hwang In-Youp)</h3>
+                        <p>เกิดเมื่อวันที่ 19 มกราคม ค.ศ. 1991 เป็นนักแสดงและนายแบบชื่อดังของเกาหลีใต้</p>
+                        <div class="card-actions justify-end"><a href="#about" class="btn btn-primary btn-sm">อ่านเพิ่มเติม</a></div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-200 shadow-xl overflow-hidden">
+                    <figure class="h-72"><img src="images/actor8.jpg" alt="จอน จองกุก" class="w-full h-full object-cover object-top" loading="lazy"></figure>
+                    <div class="card-body">
+                        <h3 class="card-title text-lg">จอน จองกุก (Jeon Jung-kook)</h3>
+                        <p>เกิดเมื่อวันที่ 1 กันยายน ค.ศ. 1997 เป็นสมาชิกของบอยแบนด์เกาหลีใต้ชื่อดังอย่างวง BTS</p>
+                        <div class="card-actions justify-end"><a href="#about" class="btn btn-primary btn-sm">อ่านเพิ่มเติม</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-center bg-neutral text-neutral-content p-8">
+        <p class="font-semibold">Pacharapron Kamollert</p>
+        <p>1680705249</p>
+    </footer>
+
+</body>
+</html>
